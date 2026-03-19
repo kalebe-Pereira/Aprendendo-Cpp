@@ -33,5 +33,12 @@ int main()
     reais = 2.4;
     cadeiaDeCaracteres = "Insira o texto aqui: ";
     
+    std::cout << numero << '\n';
+    std::cout << valor_fracionado << '\n';
+    std::cout << caracteres << '\n';
+    std::cout << boleano << '\n';
+    std::cout << reais << '\n';
+    std::cout << cadeiaDeCaracteres << '\n';
+    
     return 0;
 }
