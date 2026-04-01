@@ -1,6 +1,5 @@
-#include "iostream"
-#include <ostream>
-#include "queue"
+#include <iostream>
+#include <queue>
 // Para o método funcionar, precisa-se importar a biblioteca queue
 
 int main()

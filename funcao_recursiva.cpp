@@ -1,4 +1,4 @@
-#include "iostream"
+#include <iostream>
 
 int contator(int numero, int indice = 0);
 

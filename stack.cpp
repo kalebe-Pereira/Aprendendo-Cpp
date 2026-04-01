@@ -1,5 +1,5 @@
-#include "iostream"
-#include "stack"
+#include <iostream>
+#include <stack>
 // para declarar o uso das planilhas, será necessário importar a biblioteca stack 
 
 int main()

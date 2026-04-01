@@ -1,5 +1,4 @@
-#include "iostream"
-#include <ostream>
+#include <iostream>
 
 void texto(std::string txt = "Player");
 // A omissão de valor é feita na prototipagem da função, caso a função seja feita antes da função main, faz a omissão no parâmetro de entrada.
