@@ -1,5 +1,5 @@
-#include "iostream"
-#include "stdlib.h"
+#include <iostream>
+#include <stdlib.h>
 
 
 #define TAMANHO_VETOR 30
