@@ -7,6 +7,7 @@ struct Carro
     std::string cor;
     int pontuacao;
     int velocidade_maxima;
+    int vel;
 
     // Ao continuar-mos com struct, o próximo passo é a aprender sobre métodos. Ele possibilita adicionar os valores de uma só vez.
 
@@ -24,7 +25,7 @@ struct Carro
 
     void show()
     {
-        std::cout << "Nome.............:" << nome << '\n';
+        std::cout << "Nome.............: " << nome << '\n';
         std::cout << "Cor..............: " << cor << '\n';
         std::cout << "Pontuação........: " << pontuacao << '\n';
         std::cout << "Velocidade máxima: " << velocidade_maxima << "\n\n";
@@ -37,14 +38,16 @@ struct Carro
 
     void setVelocidade_Maxima(int stvelocidade_maxima)
     {
-        if(stvelocidade_maxima < 0)
+        int vel = stvelocidade_maxima;
+        if(vel < 0)
         {
-            std::cout << "Velocidade Máxima inválida." << '\n';
+            vel = 0;
+
         }
         else
         {
 
-            velocidade_maxima = stvelocidade_maxima;
+            velocidade_maxima = vel;
         }
     }
 
@@ -57,10 +60,34 @@ struct Carro
     {
         cor = stcor; 
     }
+
+    void setPontuacao(int stpontuacao)
+    {
+        pontuacao = stpontuacao;
+    }
 };
 
 int main()
 {
-    
+    Carro car1;
 
+    // Para adicionar os valores dessa vez, pode-se utilizar o setAll:
+
+    car1.setAll("Astra", "Vermelho", 70, 120);
+
+    car1.show(); // Mostra o resultado.
+
+    // Ou pode adicionar um por um
+
+    Carro car2;
+
+    car2.setNome("Pegeout");
+    car2.setCor("Azul");
+    car2.setPontuacao(-1);
+    car2.setVelocidade_Maxima(80);
+
+    car2.show();
+
+
+    return 0;
 }
