@@ -1,5 +1,6 @@
-#ifndef CARRO_H_INCLUDED
-#define CARRO_H_INCLUDED
+#ifndef CARRO_H_INCLUDED // Estrutura: #ifndef <NOME DO AQUIVO>_H_INCLUDED
+#define CARRO_H_INCLUDED // Estrutura: #define <NOME DO AQUIVO>_H_INCLUDED
+#include <stdio.h>
 
 class Carro
 {
@@ -8,11 +9,11 @@ class Carro
         int velocidade_maxima;
         std::string type;
         
-        void self(int type_speed);
-        void imprimir();
+        void Self(int type_speed);
+        void Imprimir();
 };
 
-void Carro::self(int type_speed)
+void Carro::Self(int type_speed)
 {
     if(type_speed == 1)
     {
@@ -31,10 +32,12 @@ void Carro::self(int type_speed)
     }
 }
 
-void Carro::imprimir()
+void Carro::Imprimir()
 {
+    std::cout << '\n';
     std::cout << "Velocidade Máxima: " << velocidade_maxima << std::endl;
-    std::cout << "Tipo.............:" << type << std::endl;
+    std::cout << "Tipo.............: " << type << std::endl;
+    std::cout << '\n';
 }
 
-#endif
+#endif // Final do ifndef, obrigatório.

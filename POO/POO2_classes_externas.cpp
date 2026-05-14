@@ -13,9 +13,9 @@ int main()
 {
     Carro *corsa = new Carro();
 
-    corsa->self(1);
+    corsa->Self(1);
 
-    corsa->imprimir();
+    corsa->Imprimir();
 
     return 0;
 }
